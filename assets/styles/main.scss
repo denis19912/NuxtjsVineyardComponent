@@ -1,0 +1,35 @@
+@import '~assets/styles/variables.scss';
+@font-face {
+  font-family: CourierPrime;
+  src: url('~assets/fonts/CourierPrime-Regular.ttf');
+}
+@font-face {
+  font-family: CourierPrimeBold;
+  src: url('~assets/fonts/CourierPrime-Bold.ttf');
+}
+@font-face {
+  font-family: LLRG;
+  src: url('~assets/fonts/LLRG.ttf');
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: CourierPrime, sans-serif;
+  a {
+    text-decoration: none;
+    color: $linkColor;
+  }
+}
+div {
+  transition: 0.3s;
+}
+.tns-controls,
+.tns-nav,
+.tns-liveregion {
+  display: none;
+}
