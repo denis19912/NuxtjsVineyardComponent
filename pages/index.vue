@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <NavBar />
-    seceret message
     <VineyardComponent
       :vineyards="vineyards"
       :selected="selected"
