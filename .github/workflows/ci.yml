@@ -21,7 +21,6 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NUXT_BUILD_DEPLOY: ${{ secrets.NUXT_BUILD_DEPLOY }}
           BRANCH: gh-pages
           FOLDER: dist
           CLEAN: true
