@@ -45,7 +45,7 @@ export default {
             items: 5,
           },
           900: {
-            items: 5,
+            items: 10,
             disable: true,
           },
         },
