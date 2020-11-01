@@ -10,7 +10,7 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v2.3.1
         with:
-          persist-credentials: false 
+          persist-credentials: false
 
       - name: Install and Build 🔧
         run: |
@@ -18,8 +18,10 @@ jobs:
           npm run generate
 
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@3.6.2
+        uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NUXT_BUILD_DEPLOY: ${{ secrets.NUXT_BUILD_DEPLOY }}
           BRANCH: gh-pages
           FOLDER: dist
+          CLEAN: true

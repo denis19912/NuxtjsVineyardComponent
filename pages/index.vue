@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <NavBar />
+    test123
     <VineyardComponent
       :vineyards="vineyards"
       :selected="selected"
